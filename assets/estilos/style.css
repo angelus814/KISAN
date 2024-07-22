@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+body{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.header{
+    background-color: #131313;
+    width: 100%;
+}
+.headerContenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 70px;
+    margin-inline: auto;
+}
+.headerImagen{
+    width: 100%;
+    max-width: 150px;
+    min-width: 80px;
+}
+.headerImagen img{
+    width: 100%;
+}
+.nav{
+    display: flex;
+    gap: 30px;
+}
+.navLink{
+    color: white;
+    font-weight: bolder;
+    font-size: 22px;
+    font-weight: 200;
+    font-family: "Roboto Condensed", sans-serif;
+    transition: color .2s ease-in-out;
+    &:hover{
+        color: rgb(49, 255, 125);
+    }
+}
+.headerSliderContenedor{
+    overflow: hidden;
+}
+.headerSlider{
+    width: 100%;
+    height: calc(100vh - 70px);
+    display: flex;
+    flex-wrap: wrap;
+    transition: all .4s linear;
+}
+.headerImagenes{
+    width: 100%;
+    height: 100%;
+}
+.headerImagen1{
+    background: linear-gradient(rgba(36, 33, 43, 0.9), rgba(36, 33, 43, .5)),url("../img/proyecto/prefabricadoTres.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.headerImagen2{
+    background: linear-gradient(rgba(36, 33, 43, .9), rgba(36, 33, 43, .5)),url("../img/proyecto/prefabricado.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.headerImagen3{
+    background: linear-gradient(rgba(36, 33, 43, .9), rgba(36, 33, 43, .5)),url("../img/proyecto/prefabricadoUno.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
