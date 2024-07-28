@@ -1,3 +1,4 @@
+
 let headerSlider = document.getElementById("headerImagen1")
 let index = 0
 
