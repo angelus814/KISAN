@@ -85,7 +85,7 @@ body{
     margin: 50px auto;
     max-width: 1600px;
 }
-.homeServiciosContainer > h2, .homeProyectosContenedor > h2, .homeFondosContainer > h2, .productosInformacionContenedor > h2, .proyectosContenedor > h2{
+.homeServiciosContainer > h2, .homeProyectosContenedor > h2, .homeFondosContainer > h2, .productosInformacionContenedor > h2, .proyectosContenedor > h2, .nosotros > h2, .contactoHeaderContenedor > h2{
     text-align: center;
     font-size: 2em;
     width: fit-content;
@@ -748,16 +748,187 @@ body{
 .botonCerrar svg:hover{
     color: black;
 }
+/*Nosotros*/
+.nosotros{
+    margin: 50px 0;
+}
+.nosotrosContenedorImagenInfo{
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.nosotrosContenedorImagen, .nosotrosContenedorInfo{
+    width: 100%;
+    max-width: 500px;
+    min-width: 300px;
+}
+.nosotrosContenedorImagen img{
+    width: 100%;
+}
+.nosotrosContenedorInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.nosotrosContenedorInfo h2{
+    padding: 10px;
+    font-size: 1.8em;
+}
+.nosotrosContenedorInfo p{
+    line-height: 30px;
+    text-wrap: pretty;
+}
+.barraIdentidad{
+    width: 100%;
+    height: 50px;
+    background-color: #ffa500;
+}
+.identidadContenedor{
+    width: 90%;
+    max-width: 1300px;
+    padding-top: 50px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    
+}
+.mision, .vision, .valores{
+    width: 300px;
+    height: 350px;
+    padding: 0 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    background-color:rgb(237, 237, 237);
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+    transition: background-color .2s ease-in-out;
+    &:hover{
+        background-color: #dd7d19;
+        color: white;
+    }
+    &:hover svg{
+        color: white;
+    }
+}
+.contenedorImagen svg{
+    color: #ffa500;
+}
+.valoresLista{
+    list-style-type: none;
+}
+/*CONTACTO*/
+.contactoHeaderContenedor{
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    max-width: 1300px;
 
-
-
-
-
-
-
-
-
-
+}
+.contactoHeaderTitulo{
+    width: 100%;
+    max-width: 600px;
+    min-width: 300px;
+    margin-inline: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contactoHeaderTitulo p{
+    line-height: 25px;
+}
+.contactoHeaderCards{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+.contactoCard{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+}
+.contactoCard svg{
+    color: #ffa500;
+}
+.contactoCard:first-child{
+    color: white;
+    background-color: #ffa500;
+}
+.contactoCard:first-child .contactoCardImagen svg{
+    color: white;
+}
+.contactoCard:nth-child(3){
+    color: white;
+    background-color: #ffa500;
+}
+.contactoCard:nth-child(3) .contactoCardImagen svg{
+    color: white;
+}
+.contactoContenidoInfo{
+    width: 100%;
+    max-width: 1300px;
+    min-width: 300px;
+    margin-inline: auto;
+    display: flex;
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+}
+.contactoContenidoInfoMap, .contactoContenidoInfoForm{
+    width: 100%;
+    max-width: 650px;
+    min-width: 300px;
+}
+.contactoContenidoInfoForm{
+    padding: 40px;
+    background-color: white;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+form input{
+    padding: 15px;
+    font-size: 1.1em;
+    border: 1px solid lightgray;
+    color: gray;
+    outline: none;
+}
+form textarea{
+    width: 100%;
+    min-width: 300px;
+    height: 200px;
+    border: none;
+    outline: none;
+    padding: 15px;
+    font-size: 1.1em;
+    resize: none;
+    font-family: sans-serif;
+    color: gray;
+    border: 1px solid lightgray;
+}
+form button{
+    padding: 15px;
+    font-size: 1.1em;
+    cursor: pointer;
+    background: #ffa500;
+    border: none;
+    color: white;
+    &:hover{
+        background-color: rgba(255, 155, 40, 0.7);
+    }
+}
 /*Boton disabled*/
 button:disabled{
     opacity: .5;
