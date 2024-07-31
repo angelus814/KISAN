@@ -11,7 +11,8 @@
   </head>
   <body>
     <header class="header">
-        <div class="headerContenedor">
+      <div class="headerContenedor">
+        <div class="headerImagenMenu">
           <div class="headerImagen">
             <img
               src="assets/img/cabezera/logo.webp"
@@ -19,15 +20,18 @@
               loading="lazy"
             />
           </div>
-          <nav class="nav">
-            <a href="index.html"  class="navLink">Inicio</a>
-            <a href="productos.html"  class="navLink" >Productos</a>
-            <a href="proyectos.html"  class="navLink" >Proyectos</a>
-            <a href="nosotros.html"  class="navLink"  >Nosotros</a>
-            <a href="#"  class="navLink"  >Contacto</a>
-  
-          </nav>
+          <div class="headerMenu">
+            <svg  xmlns="http://www.w3.org/2000/svg"  width="50"  height="50"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6l16 0" /><path d="M4 12l16 0" /><path d="M4 18l16 0" /></svg>
+          </div>
         </div>
+        <nav class="nav" id="nav">
+          <a href="index.html"  class="navLink">Inicio</a>
+          <a href="productos.html"  class="navLink" >Productos</a>
+          <a href="proyectos.html"  class="navLink" >Proyectos</a>
+          <a href="nosotros.html"  class="navLink" >Nosotros</a>
+          <a href="#"  class="navLink" >Contacto</a>
+        </nav>
+      </div>
         <section class="headerProductosContenedor">
           
         </section> 
@@ -146,5 +150,7 @@
           </div>
         </div>
     </footer>
+    <script src="assets/scripts/menu.js">
+    </script>
 </body>
 </html>
