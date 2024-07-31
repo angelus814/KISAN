@@ -1004,4 +1004,11 @@ button:disabled{
     .homeFondosContainerGrid{
         grid-template-columns: 1fr;
     }
+    .homeNosotrosContainerLeftImagen{
+        width: 300px;
+        height: 300px;
+    }
+    .homeNosotrosContainerRightInfo p{
+        text-align: center;
+    }
 }
