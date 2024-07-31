@@ -989,6 +989,9 @@ button:disabled{
     .nosotrosContenedorInfo p{
         text-align: center;
     }
+    .proyectosContenedorItem.proyectosItem{
+        flex-direction: column;
+    }
 }
 @media (max-width: 900px){
     .homeContactoContenedor{
@@ -1034,5 +1037,17 @@ button:disabled{
     }
     .homeFormularioDatos{
         flex-direction: column;
+    }
+}
+@media (max-width: 570px){
+    .proyectosContenedorItemImagen{
+        width: 300px;
+        height: 300px;
+    }
+}
+@media (max-width: 420px){
+    .proyectosContenedorItemImagen{
+        width: 250px;
+        height: 250px;
     }
 }
