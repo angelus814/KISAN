@@ -28,6 +28,19 @@ body{
     max-width: 150px;
     min-width: 80px;
 }
+.headerMenu{
+    display: none;
+}
+.nav.menuAbierto{
+    display: flex;
+    z-index: 1;
+    flex-direction: column;
+    background-color:#e3e3e3;
+    width: 100vw;
+    padding: 30px;
+    align-items: center;
+
+}
 .headerImagen img{
     width: 100%;
 }
@@ -361,6 +374,7 @@ body{
     margin: 50px auto;
     display: flex;
     justify-content: space-between;
+    gap: 10px;
 }
 .homeContactoContenedorLeft{
     display: flex;
@@ -464,6 +478,8 @@ body{
     display: flex;
     gap: 100px;
     justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
 }
 .footerContainerFlex h2{
     font-size: 1.9em;
@@ -794,7 +810,7 @@ body{
     display: flex;
     justify-content: center;
     gap: 30px;
-    
+    flex-wrap: wrap;
 }
 .mision, .vision, .valores{
     width: 300px;
@@ -848,6 +864,8 @@ body{
     display: flex;
     gap: 20px;
     padding: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .contactoCard{
     width: 300px;
@@ -858,6 +876,7 @@ body{
     justify-content: center;
     gap: 30px;
     box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+    background-color:rgb(237, 237, 237);
 }
 .contactoCard svg{
     color: #ffa500;
@@ -877,7 +896,7 @@ body{
     color: white;
 }
 .contactoContenidoInfo{
-    width: 100%;
+    width: 90%;
     max-width: 1300px;
     min-width: 300px;
     margin-inline: auto;
@@ -929,7 +948,60 @@ form button{
         background-color: rgba(255, 155, 40, 0.7);
     }
 }
+
 /*Boton disabled*/
 button:disabled{
     opacity: .5;
+}
+
+
+@media (max-width: 1610px){
+    .absoluteLeft, .absoluteRight{
+        display: none;
+    }
+}
+@media (max-width: 1100px){
+    .nav{
+        display: none;
+    }
+    .headerMenu{
+        display: block;
+    }
+    .headerImagenMenu{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .headerContenedor{
+        flex-direction: column;
+    }
+    .homeFondosContainerGrid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 900px){
+    .homeContactoContenedor{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .homeContactoContenedorLeft{
+        align-items: center;
+    }
+    .homeContactoContenedorLeft h2{
+        margin-inline: auto;
+    }
+    .homeNosotros{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    .homeNosotrosContainer{
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+@media (max-width: 700px){
+    .homeFondosContainerGrid{
+        grid-template-columns: 1fr;
+    }
 }
