@@ -1011,4 +1011,7 @@ button:disabled{
     .homeNosotrosContainerRightInfo p{
         text-align: center;
     }
+    .homeFormularioDatos{
+        flex-direction: column;
+    }
 }
